@@ -1,6 +1,6 @@
 package ui.controller;
 
-import ui.view.MainFrame;
+import ui.view.SwingMainFrame;
 
 import javax.swing.*;
 
@@ -8,7 +8,7 @@ public class MainFrameController {
 
 
 
-    private MainFrame mainFrame;
+    private SwingMainFrame sMF;
     private JButton databaseEntryButton;
 
     public MainFrameController() {
@@ -17,14 +17,11 @@ public class MainFrameController {
     }
 
     private void initComponents() {
-        mainFrame = new MainFrame();
-
-        databaseEntryButton = mainFrame.getDatabaseEntryButton();
-
+        sMF = new SwingMainFrame();
     }
 
     public void showMainFrameWindows(){
-        mainFrame.setVisible(true);
+        sMF.setVisible(true);
     }
 
 

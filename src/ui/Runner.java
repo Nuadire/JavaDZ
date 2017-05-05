@@ -1,10 +1,15 @@
 package ui;
 
-import ui.controller.MainFrameController;
+
+import ui.view.SwingMainFrame;
 
 public class Runner {
     public static void main(String[] args) {
-        MainFrameController mainFrameController = new MainFrameController();
-        mainFrameController.showMainFrameWindows();
+
+        SwingMainFrame smf = new SwingMainFrame();
+        smf.setVisible(true);
+
+
+
     }
 }
